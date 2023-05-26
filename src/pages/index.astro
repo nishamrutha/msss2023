@@ -5,32 +5,44 @@ import Card from '../components/Card.astro';
 
 <Layout title="MSSS2023">
     <main>
+        <!-- how to set the background colour, for individual elements, use
+        the same style command-->
+        <body style="background-color:rgb(0, 0, 0)"></body>
         <h1><span class="text-gradient">Mount Stromlo Student Seminars 2023</span></h1>
-        <p class="instructions">
-            Initial deployment of the MSSS2023 website. <strong>UNDER CONSTRUCTION!!!</strong>
-        </p>
-        <ul role="list" class="link-card-grid">
-            <Card
-                    href="https://docs.astro.build/"
-                    title="Documentation"
-                    body="Learn how Astro works and explore the official API docs."
-            />
-            <Card
-                    href="https://astro.build/integrations/"
-                    title="Integrations"
-                    body="Supercharge your project with new frameworks and libraries."
-            />
-            <Card
-                    href="https://astro.build/themes/"
-                    title="Themes"
-                    body="Explore a galaxy of community-built starter themes."
-            />
-            <Card
-                    href="https://astro.build/chat/"
-                    title="Community"
-                    body="Come say hi to our amazing Discord community. ❤️"
-            />
-        </ul>
+        <section id="Menu">
+            <a href="#info" class='button'><img src="../../public/description_button.png" width="75" , alt="images"></a>
+            <a href="#keydates" class='button'><img src="../../public/button.png" width="100" , alt="images"></a>
+            <a href="#registration" class='button'><img src="../../public/button.png" width="100" , alt="images"></a>
+            <a href="#program" class='button'><img src="../../public/button.png" width="100" , alt="images"></a>
+            <a href="#participants" class='button'><img src="../../public/button.png" width="100" , alt="images"></a>
+        </section>
+        <div>
+            <br>
+            </br>
+        </div>
+        <section id="logo">
+            <img src="../../public/airglow.jpeg" alt="MSSS2023 Logo" width=500>
+            <section id='info'>
+                <h2 style="text-align:center"><span style="color: #FDDDA5; ">Information</span></h2>
+                <p><span style="color: #FDDDA5; ">Some writing about general information about the seminars.</span></p>
+            </section>
+            <section id='keydates'>
+                <h2><span style="color: #AAFDA5; ">Key Dates</span></h2>
+                <p><span style="color: #AAFDA5; ">Any key dates.</span></p>
+            </section>
+            <section id='registration'>
+                <h2><span style="color: #A5FDF7; ">Registration</span></h2>
+                <p><span style="color: #A5FDF7; ">Link and info about registering.</span></p>
+            </section>
+            <section id='program'>
+                <h2><span style="color: #A5ADFD; ">Program</span></h2>
+                <p><span style="color: #A5ADFD; ">The program.</span></p>
+            </section>
+            <section id='participants'>
+                <h2><span style="color: #D7A5FD; ">Participants</span></h2>
+                <p><span style="color: #D7A5FD; ">Participant list and organisation</span></p>
+            </section>
+        </section>
     </main>
 </Layout>
 
@@ -117,46 +129,3 @@ import Card from '../components/Card.astro';
         padding: 0;
     }
 </style>
-
-<html>
-<main>
-    <!-- how to set the background colour, for individual elements, use
-    the same style command-->
-    <body style="background-color:rgb(0, 0, 0)"></body>
-    <h1> Welcome To The Mount Stromlo Student Seminars 2023!</h1>
-    <section id="Menu">
-        <a href="#info" class='button'><img src="../../public/description_button.png" width="75", alt="images"></a>
-        <a href="#keydates" class='button'><img src="../../public/button.png" width="100", alt="images"></a>
-        <a href="#registration" class='button'><img src="../../public/button.png" width="100", alt="images"></a>
-        <a href="#program" class='button'><img src="../../public/button.png" width="100", alt="images"></a>
-        <a href="#participants" class='button'><img src="../../public/button.png" width="100", alt="images"></a>
-    </section>
-    <div>
-        <br>
-        </br>
-    </div>
-    <section id="logo">
-        <img src="../../public/airglow.jpeg" alt="MSSS2023 Logo">
-        <section id='info'>
-            <h2 style="text-align:center"><span style="color: #FDDDA5; ">Information</span></h2>
-            <p><span style="color: #FDDDA5; ">Some writing about general information about the seminars.</span></p>
-        </section>
-        <section id='keydates'>
-            <h2><span style="color: #AAFDA5; ">Key Dates</span></h2>
-            <p><span style="color: #AAFDA5; ">Any key dates.</span></p>
-        </section>
-        <section id='registration'>
-            <h2><span style="color: #A5FDF7; ">Registration</span></h2>
-            <p><span style="color: #A5FDF7; ">Link and info about registering.</span></p>
-        </section>
-        <section id='program'>
-            <h2><span style="color: #A5ADFD; ">Program</span></h2>
-            <p><span style="color: #A5ADFD; ">The program.</span></p>
-        </section>
-        <section id='participants'>
-            <h2><span style="color: #D7A5FD; ">Participants</span></h2>
-            <p><span style="color: #D7A5FD; ">Participant list and organisation</span></p>
-        </section>
-    </section>
-</main>
-</html>
