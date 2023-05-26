@@ -4,142 +4,156 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1><span class="text-gradient">Mount Stromlo Student Seminars 2023</span></h1>
-		<p class="instructions">
-			Initial deployment of the MSSS2023 website. <strong>UNDER CONSTRUCTION!!!</strong>
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+    <main>
+        <h1><span class="text-gradient">Mount Stromlo Student Seminars 2023</span></h1>
+        <p class="instructions">
+            Initial deployment of the MSSS2023 website. <strong>UNDER CONSTRUCTION!!!</strong>
+        </p>
+        <ul role="list" class="link-card-grid">
+            <Card
+                    href="https://docs.astro.build/"
+                    title="Documentation"
+                    body="Learn how Astro works and explore the official API docs."
+            />
+            <Card
+                    href="https://astro.build/integrations/"
+                    title="Integrations"
+                    body="Supercharge your project with new frameworks and libraries."
+            />
+            <Card
+                    href="https://astro.build/themes/"
+                    title="Themes"
+                    body="Explore a galaxy of community-built starter themes."
+            />
+            <Card
+                    href="https://astro.build/chat/"
+                    title="Community"
+                    body="Come say hi to our amazing Discord community. ❤️"
+            />
+        </ul>
+    </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-		color: #FDA5A5;
-	}
-	h2 {font-size: 2rem;
+    main {
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 60ch;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+        color: #FDA5A5;
+    }
+
+    h2 {
+        font-size: 2rem;
         text-align: center;
         margin: 0;
     }
-	body {flex-basis: 100%;
+
+    body {
+        flex-basis: 100%;
         font-size: small;
-	}
-	p {font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
         text-align: center;
     }
-    .button {background-color:black;
-        font-size:medium;
+
+    .button {
+        background-color: black;
+        font-size: medium;
         cursor: pointer;
         text-align: center;
         -webkit-text-fill-color: whitesmoke;
         margin: 5px;
         justify-content: space-between;
     }
-    div {display: block;
+
+    div {
+        display: block;
         text-align: center;
         height: 10px;
     }
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+
+    .instructions {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+    }
+
+    .instructions code {
+        font-size: 0.875em;
+        font-weight: bold;
+        background: rgba(var(--accent), 12%);
+        color: rgb(var(--accent));
+        border-radius: 4px;
+        padding: 0.3em 0.45em;
+    }
+
+    .instructions strong {
+        color: rgb(var(--accent));
+    }
+
+    .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 1rem;
+        padding: 0;
+    }
 </style>
+
 <html>
-<main>
-	<!-- how to set the background colour, for individual elements, use
-	the same style command-->    
-	<body style="background-color:rgb(0, 0, 0)"></body>
-	<h1> Welcome To The Mount Stromlo Student Seminars 2023!</h1> 
-	<section id="Menu">
-	<a href="#info" class ='button'><img src="description_button.png" width="75"></a>
-	<a href="#keydates" class ='button'><img src="button.png" width="100"></a>
-	<a href="#registration" class ='button'><img src="button.png" width="100"></a>
-	<a href="#program" class ='button'><img src="button.png" width="100"></a>
-	<a href="#participants" class ='button'><img src="button.png" width="100"></a>
-	</section> 
-	<div> 
-		<br>
-		</br>
-	</div> 
-	<section id="logo"> 
-	<img src="airglow.jpeg" alt="MSSS2023 Logo">
-	<section id='info'>
-		<h2 style="text-align:center"><font color= "#FDDDA5">Information</font></h2>
-		<p><font color= "#FDDDA5">Some writing about general information about the seminars.</font></p>
-	</section>
-	<section id='keydates'>
-		<h2><font color= "#AAFDA5">Key Dates</font></h2>
-		<p><font color= "#AAFDA5">Any key dates.</font></p>
-	</section>
-	<section id='registration'>
-		<h2><font color= "#A5FDF7">Registration</font></h2>
-		<p><font color= "#A5FDF7">Link and info about registering.</font></p>
-	</section>
-	<section id='program'>
-		<h2><font color= "#A5ADFD">Program</font></h2>
-		<p><font color= "#A5ADFD">The program.</font></p>
-	</section>
-	<section id='participants'>
-		<h2><font color= "#D7A5FD">Participants</font></h2>
-		<p><font color= "#D7A5FD">Participant list and organisation</font></p>
-	</section>
-	</main>
-	</html>
-	
+    <!-- how to set the background colour, for individual elements, use
+    the same style command-->
+    <body style="background-color:rgb(0, 0, 0)"></body>
+    <h1> Welcome To The Mount Stromlo Student Seminars 2023!</h1>
+    <section id="Menu">
+        <a href="#info" class='button'><img src="description_button.png" width="75"></a>
+        <a href="#keydates" class='button'><img src="button.png" width="100"></a>
+        <a href="#registration" class='button'><img src="button.png" width="100"></a>
+        <a href="#program" class='button'><img src="button.png" width="100"></a>
+        <a href="#participants" class='button'><img src="button.png" width="100"></a>
+    </section>
+    <div>
+        <br>
+        </br>
+    </div>
+    <section id="logo">
+        <img src="airglow.jpeg" alt="MSSS2023 Logo">
+        <section id='info'>
+            <h2 style="text-align:center"><font color="#FDDDA5">Information</font></h2>
+            <p><font color="#FDDDA5">Some writing about general information about the seminars.</font></p>
+        </section>
+        <section id='keydates'>
+            <h2><font color="#AAFDA5">Key Dates</font></h2>
+            <p><font color="#AAFDA5">Any key dates.</font></p>
+        </section>
+        <section id='registration'>
+            <h2><font color="#A5FDF7">Registration</font></h2>
+            <p><font color="#A5FDF7">Link and info about registering.</font></p>
+        </section>
+        <section id='program'>
+            <h2><font color="#A5ADFD">Program</font></h2>
+            <p><font color="#A5ADFD">The program.</font></p>
+        </section>
+        <section id='participants'>
+            <h2><font color="#D7A5FD">Participants</font></h2>
+            <p><font color="#D7A5FD">Participant list and organisation</font></p>
+        </section>
+</html>
