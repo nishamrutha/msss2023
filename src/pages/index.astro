@@ -44,7 +44,30 @@ import Card from '../components/Card.astro';
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
+		color: #FDA5A5;
 	}
+	h2 {font-size: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+	body {flex-basis: 100%;
+        font-size: small;
+	}
+	p {font-size: 1rem;
+        text-align: center;
+    }
+    .button {background-color:black;
+        font-size:medium;
+        cursor: pointer;
+        text-align: center;
+        -webkit-text-fill-color: whitesmoke;
+        margin: 5px;
+        justify-content: space-between;
+    }
+    div {display: block;
+        text-align: center;
+        height: 10px;
+    }
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -78,3 +101,45 @@ import Card from '../components/Card.astro';
 		padding: 0;
 	}
 </style>
+<html>
+<main>
+	<!-- how to set the background colour, for individual elements, use
+	the same style command-->    
+	<body style="background-color:rgb(0, 0, 0)"></body>
+	<h1> Welcome To The Mount Stromlo Student Seminars 2023!</h1> 
+	<section id="Menu" style align="center">
+	<a href="#info" class ='button'><img src="description_button.png" width="75"></a>
+	<a href="#keydates" class ='button'><img src="button.png" width="100"></a>
+	<a href="#registration" class ='button'><img src="button.png" width="100"></a>
+	<a href="#program" class ='button'><img src="button.png" width="100"></a>
+	<a href="#participants" class ='button'><img src="button.png" width="100"></a>
+	</section> 
+	<div> 
+		<br>
+		</br>
+	</div> 
+	<section id="logo"> 
+	<img src="airglow.jpeg" alt="MSSS2023 Logo">
+	<section id='info'>
+		<h2 style="text-align:center"><font color= "#FDDDA5">Information</font></h2>
+		<p><font color= "#FDDDA5">Some writing about general information about the seminars.</font></p>
+	</section>
+	<section id='keydates'>
+		<h2><font color= "#AAFDA5">Key Dates</font></h2>
+		<p><font color= "#AAFDA5">Any key dates.</font></p>
+	</section>
+	<section id='registration'>
+		<h2><font color= "#A5FDF7">Registration</font></h2>
+		<p><font color= "#A5FDF7">Link and info about registering.</font></p>
+	</section>
+	<section id='program'>
+		<h2><font color= "#A5ADFD">Program</font></h2>
+		<p><font color= "#A5ADFD">The program.</font></p>
+	</section>
+	<section id='participants'>
+		<h2><font color= "#D7A5FD">Participants</font></h2>
+		<p><font color= "#D7A5FD">Participant list and organisation</font></p>
+	</section>
+	</main>
+	</html>
+	
