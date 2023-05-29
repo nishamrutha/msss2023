@@ -19,7 +19,7 @@ import Card from '../components/Card.astro';
             </br>
         </div>
         <section id="logo">
-            <img src="/msss2023/MSSS2023_PosterArt.png" alt="MSSS2023 Logo" width=500px>
+            <img class ="anyofimgclass" src="/msss2023/MSSS2023_PosterArt.png" alt="MSSS2023 Logo" width=500px>
 		</section>
             <section id='registration'>
                 <h2><span style="color: #A5FDF7; ">Registration</span></h2>
@@ -67,8 +67,13 @@ import Card from '../components/Card.astro';
         -webkit-text-fill-color: rgba(0, 0, 255, 0);
         margin: 5px;
         justify-content: space-between;
+        width: 10%
     }
-
+    .anyofimgclass{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
     div {
         display: block;
         text-align: center;
