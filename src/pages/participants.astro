@@ -24,10 +24,14 @@ import Card from '../components/Card.astro';
             <section id='participants'>
                 <h2><span style="color: #D7A5FD; ">Participants</span></h2>
             <div class = "column">
+                <div class = "row">
                 <h2><span style="color: #D7A5FD; ">Name</span></h2>
                 <h2><span style="color: #D7A5FD; ">Institution</span></h2>
+                </div>
+                <div>
                 <p><span style="color: #D7A5FD; ">Neelesh Amrutha</span></p>
                 <p><span style="color: #D7A5FD; ">ANU</span></p>
+                </div>
             </div>
             </section>
     </main>
@@ -83,6 +87,11 @@ import Card from '../components/Card.astro';
     .column{
         column-count: 2;
         column-gap: 50px;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
     }
 
     div {
