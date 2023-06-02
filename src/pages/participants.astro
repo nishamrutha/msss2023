@@ -27,10 +27,10 @@ import Card from '../components/Card.astro';
                 <div class = "column">
                     <h2><span style="color: #D7A5FD; ">Name</span></h2>
                     <p><span style="color: #D7A5FD; ">Erin Holdorf</span></p>
+                </div>
                 <div class = "column">
                     <h2><span style="color: #D7A5FD; ">Institution</span></h2>
                     <p><span style="color: #D7A5FD; ">ANU</span></p>
-                </div>
                 </div>
             </div>
             </section>
@@ -43,6 +43,7 @@ import Card from '../components/Card.astro';
         padding: 1.5rem;
         max-width: vw;
         align-items: center;
+        min-height: vh;
     }
 
     h1 {
@@ -85,8 +86,9 @@ import Card from '../components/Card.astro';
     }
 
     .column {
-        width:50%;
-}
+    float: left;
+    width: 50%;
+    }
     .row {
         width:100%;
         display: inline-flex;
@@ -94,6 +96,8 @@ import Card from '../components/Card.astro';
     }
     .row:after {
         clear:both;
+        content: "";
+        display: table;
     }
 
     div {
