@@ -23,7 +23,7 @@ import Card from '../components/Card.astro';
 		</section> 
             <section id='participants' style="background-color:rgba(0,0,0,0.8);">
                 <h2><span style="color: #D7A5FD;background-color:rgba(0,0,0,0.8); ">Participants</span></h2>
-                <div class = "row">   
+                <div class = "row" style = "background-color: rgba(0,0,0,0.8);">   
                 <div class = "column" style = "background-color: rgba(0,0,0,0.8);">
                     <h2><span style="color: #D7A5FD; ">Name</span></h2>
                     <p><span style="color: #D7A5FD; ">
@@ -57,6 +57,8 @@ import Card from '../components/Card.astro';
         align-items: center;
         background-size: 100% ;
         background-image: url("/msss2023/MSSS2023_PosterArt.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     h1 {
@@ -112,7 +114,7 @@ import Card from '../components/Card.astro';
         width:100%;
         display: inline-flex;
         flex-wrap: wrap;
-        padding-bottom: 3cm;
+        padding-bottom: 1cm;
     }
 
     div {
