@@ -7,7 +7,14 @@ import Card from '../components/Card.astro';
     <main style="text-align: center">
         <!-- how to set the background colour, for individual elements, use
         the same style command-->
-        <h1><span>Mount Stromlo Student Seminars 2023</span></h1>
+       <!-- <h1><span>Mount Stromlo Student Seminars 2023</span></h1>-->
+       <section id="logo">
+        <img class="logopic" src="/msss2023/logo_whole_transparent.png" alt="MSSS2023 Logo">
+    </section> 
+        <div>
+            <br>
+            </br>
+        </div>
         <section id="Menu">
             <a href="#info" class='button'><img src="/msss2023/information_button.png" width="75" alt="images"></a>
             <!--<a href="#keydates" class='button'><img src="/msss2023/key_dates_button.png" width="75" alt="images"></a> -->
@@ -15,13 +22,7 @@ import Card from '../components/Card.astro';
             <a href="/msss2023/program/" class='button'><img src="/msss2023/program_button.png" width="75" alt="images"></a>
             <a href="/msss2023/participants/" class='button'><img src="/msss2023/participants_button.png" width="75" alt="images"></a>
         </section>
-        <div>
-            <br>
-            </br>
-        </div>
-        <section id="logo">
-            <img class="logopic" src="/msss2023/logo_whole_transparent.png" alt="MSSS2023 Logo">
-		</section> 
+
             <section id='info' style="background-color:rgba(0,0,0,0.5);">
                 <h2 style="text-align:center"><span style="color: #FDDDA5; "> About MSSS2023 <br></span></h2>
                 <p><span style="color: #FDDDA5; "> The ANU Research School of Astronomy and Astrophysics (RSAA) is proud
@@ -127,7 +128,16 @@ import Card from '../components/Card.astro';
         align-self: center;
         margin-left: auto;
         margin-right: auto;
-        max-width: 40%;
+    }
+    @media only screen and (max-width: 600px) {
+                .logopic {
+                  max-width:50%
+                }
+              }
+    @media only screen and (min-width: 601px) {
+    .logopic {
+        max-width:30%
+    }
     }
 
     .anyofimgclass{

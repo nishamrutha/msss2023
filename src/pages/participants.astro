@@ -6,21 +6,21 @@ import Card from '../components/Card.astro';
 <Layout title="MSSS2023">
     <main style= "text-align: center">
         <!-- Keep the header, and buttons the same for all pages-->
-        <h1><span>Mount Stromlo Student Seminars 2023</span></h1>
+        <section id="logo">
+            <img class="logopic" src="/msss2023/logo_whole_transparent.png" alt="MSSS2023 Logo">
+		</section> 
+    <div>
+        <br>
+        </br>
+    </div>
+       <!--  <h1><span>Mount Stromlo Student Seminars 2023</span></h1> -->
         <section id="Menu">
             <a href="/msss2023/" class='button'><img src="/msss2023/information_button.png" width="75" alt="images"></a>
             <!--<a href="#keydates" class='button'><img src="/msss2023/key_dates_button.png" width="75" alt="images"></a> -->
             <a href="/msss2023/registration/" class='button'><img src="/msss2023/registration_button.png" width="75" alt="images"></a>
             <a href="/msss2023/program/" class='button'><img src="/msss2023/program_button.png" width="75" alt="images"></a>
             <a href="#participants" class='button'><img src="/msss2023/participants_button.png" width="75" alt="images"></a>
-        </section>
-        <div>
-            <br>
-            </br>
-        </div>
-        <section id="logo">
-            <img class="logopic" src="/msss2023/logo_whole_transparent.png" alt="MSSS2023 Logo">
-		</section> 
+        
             <section id='participants' style="background-color:rgba(0,0,0,0.5);">
                 <h2><span style="color: #D7A5FD; ">Participants <br></span></h2>
                 <div class = "row">   
@@ -107,9 +107,17 @@ import Card from '../components/Card.astro';
         align-self: center;
         margin-left: auto;
         margin-right: auto;
-        max-width: 40%;
     }
-
+    @media only screen and (max-width: 600px) {
+                .logopic {
+                  max-width:50%
+                }
+              }
+    @media only screen and (min-width: 601px) {
+    .logopic {
+        max-width:30%
+    }
+    }
     .column {
     float: left;
     width: 50%;
