@@ -24,7 +24,7 @@ import Card from '../components/Card.astro';
             <section id='program' style="align-content: centre; background-color:rgba(0,0,0,0.5);">
                 <h2><span style="color: #A5ADFD; ">Program <br></span></h2>
                 <!--<p><span style="color: #A5ADFD; ">The program.</span></p>-->
-                <iframe width=53% height=930px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWyeEk7lP0ghHTPQ5ildsaeMUd0iOvc79t3rZOsLwh2edWeJkB5RMMFtPvM7rc0qEBEMMLDUrcTamu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe class ='program_sizing' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWyeEk7lP0ghHTPQ5ildsaeMUd0iOvc79t3rZOsLwh2edWeJkB5RMMFtPvM7rc0qEBEMMLDUrcTamu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
             </section>
     </main>
 </Layout>
@@ -92,6 +92,19 @@ import Card from '../components/Card.astro';
     .logopic {
         max-width:30%
     }
+    }
+    @media only screen and (max-width:600px){
+        .program_sizing{
+            width:90% ;
+            height:930px
+        }
+    }
+
+    @media only screen and (min-width:601px){
+        .program_sizing{
+            width:53% ;
+            height:930px;
+        }
     }
 
     .anyofimgclass{
